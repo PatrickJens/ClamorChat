@@ -69,7 +69,7 @@ const server = http.createServer(function(req, res)
     }
     if(req.method == "POST") 
     {
-        sendToPostHandler(req, res);
+        postHandler.sendToPostHandler(req, res);
     }
 });
 
