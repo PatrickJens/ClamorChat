@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Clamor - Login</title>
+        <!-- Begin Imports -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <script type="text/javascript"  src="/bad-login-signup-controller.js"></script>
+        <script type="text/javascript"  src="/PostJSON.js"></script>
+        <!-- End Imports -->
+    </head>
+    
+    <body>
+
+            <br />
+            <br />
+    
+            <div id="title-bar-landing-page" class="container" style="background-color: rgba(20, 45, 120, 0.8)">
+                <div class="row">
+                    <div class="col-sm">
+                    <h1 style="color:azure; font-size: 6rem">Clamor</h1>
+                    </div>
+                </div>
+            </div>
+    
+            <br>
+
+            <div id='utility-box-landing-page' class="container" style="background-color:rgba(54, 69, 114, 0.45)">
+
+
+                    <div class="row">
+                            <img src="./images/badLoginImage.png" style= "display: block;margin-left: auto; margin-right: auto; margin-top:10px; background:rgba(43, 67, 145, 0.788); padding:12px;border:1px solid #999; " alt="loud kitten says bad login">
+                    </div>
+        
+                    <div id="message-to-user" style="text-align: center; font-size: 1.5rem">Enter a username and password, then hit Register to sign up!</div>
+        
+                    <br>
+        
+                        
+                    <div class = "row">
+                        <div id ="user-exists-message" style="margin-left:auto;margin-right:auto;color:red;font-size: 1.25rem"></div>
+                    </div>
+                    <br>
+                    <div class="row">
+                            <div class="col-5" style="font-size: 2rem;  text-align:right;color:black">Username:</div>
+                            <div class="col-7"><input id="username-input" style="margin-top:0.25rem; font-size: 1.5rem;"></div>
+                        </div>
+        
+                        <div class="row">
+                            <div class="col-5" style="font-size: 2rem; text-align:right;color:black">Password:</div>
+                            <div class="col-7"><input id="password-input" style="margin-top:0.25rem; font-size: 1.5rem;"></div>
+                        </div>
+
+        
+                    <br><br>
+        
+                    <div class="row">
+                        <div class="col-3"></div>
+                        <div class="col-3"><button id="login-button" onclick ="registerUser()" style="font-size:1.5rem;padding-left:4rem;padding-right:4rem;width:220px;">Register</button></div>
+                        <div class="col-3"><button id="register-button" onclick="goToLandingPage()" style="font-size:1.5rem;padding-left:2.5rem;padding-right:2.5rem;width:220px">Front Page</button></div>
+                    </div>
+            <br>
+            </div>
+
+            <p id="debug" style="text-align:center">debug paragraph</p>
+
+            <br>
+            <br>
+    </body>
+</html>
