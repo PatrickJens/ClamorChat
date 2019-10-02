@@ -4,7 +4,7 @@ Web based chat application deployed on the Heroku cloud.
 ------------------------------------------------------------------------------------------------
 The main entry point is clamor-server.js; clamor-server.js must be running either locally or in cloud for the application to work
 
-Folders named wxyz-VC means that a MVC (model-view-controller) was implemented for that part of the webpage. Because the data model was simple, only the VC of MVC was explcitly implemented. 
+Folders named wxyz-VC means that a MVC (model-view-controller) was implemented for that part of the webpage. Because the data model was simple, only the VC of MVC was explcitly implemented. The only exception is register-user-VC which only contains the registration page .html and uses controller JavaScript code from other MVC folders. 
 
 The user data model is {username, password}
 
