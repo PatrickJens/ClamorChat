@@ -20,4 +20,5 @@ When running on localhost, the MySQL connection object in DBManager.js must be c
 
 The Heroku MySQL API times out after 60 seconds, so a dummy query is executed every 55 seconds.
 
-Finally, the Heroku hosting service times out after 30 minutes of inactivity. Any potential employeers or recruiters must contact me (the author) to activate the application for demo purposes.
+The Heroku hosting service times out after 30 minutes of inactivity. Any potential employeers or recruiters must contact me (the author) to activate the application for a demo. On Heroku, this application is fully functional although not exactly high security. =)
+
