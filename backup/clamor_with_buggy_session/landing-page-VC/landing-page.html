@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>Clamor - Landing Page</title>
+	<!-- Imports -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="./landing-page.css" />
+	<script src="/socket.io/socket.io.js"></script>
+	<script type="text/javascript"  src="/landing-page-controller.js"></script>
+	<script type="text/javascript"  src="/PostJSON.js"></script>
+	<script type="text/javascript"  src="/Cookie.js"></script>
+
+	<!-- End Imports -->
+</head>
+<body>		
+
+		<br>
+		<br>
+
+		<div id="title-bar-landing-page" class="container" style="background-color: rgba(20, 45, 120, 0.8)">
+			<div class="row">
+				<div class="col-sm">
+				<h1 style="color:azure; font-size: 6rem">Clamor</h1>
+				</div>
+			</div>
+		</div>
+
+		<br>
+
+		<div id='utility-box-landing-page' class="container" style="background-color:rgba(20, 45, 120, 0.45)">
+			<div class="row">
+				<div class="col-12" style="text-align: center;font-size: 3rem; font-weight:bold;color:black"> Welcome to Clamor</div>
+			</div>
+			<div class="row">
+				<div class="col-2"></div>
+				<div class="col-8" style="text-align: center;font-size: 1.5rem">Login to join the Clamor! Or click the Register link to sign up.</div>
+				<div class="col-2"></div>
+			</div>
+			<br> 
+			<br>
+			<!-- <form action="/clamor-server.jsp" method="post"> -->
+				<div class="row">
+					<div class="col-5" style="font-size: 2rem; text-align:right;color:black">Username:</div>
+					<div class="col-7"><input id="username-input" style="margin-top:0.25rem; font-size: 1.5rem;"></div>
+				</div>
+				<div class="row">
+					<div class="col-5" style="font-size: 2rem; text-align:right;color:black">Password:</div>
+					<div class="col-7"><input id="password-input" style="margin-top:0.25rem; font-size: 1.5rem;"></div>
+				</div>
+			<!-- </form> -->
+			<br>
+			<br>
+			<div class="row">
+				<div class="col-3"></div>
+				<div class="col-3"><button id="login-button" onclick ="login()" style="font-size:1.5rem;padding-left:4rem;padding-right:4rem">Login</button></div>
+				<div class="col-3"><button id="register-button" onclick="goToRegisterPage()" style="font-size:1.5rem;padding-left:3.5rem;padding-right:3.5rem">Register</button></div>
+			</div>
+
+			<br><br><br><br><br>
+
+			<div class="row">
+				<div class="col-2" style="text-align:center">About</div>
+				<div class="col-2" style="text-align:center">Help</div>
+				<div class="col-2" style="text-align:center">Forgot Password</div>
+				<div class="col-2" style="text-align:center">Privacy Policy</div>
+				<div class="col-2" style="text-align:center">Cookies</div>
+				<div class="col-2" style="text-align:center">Careers</div>
+			</div>
+		</div>
+
+	<br>
+	<div id="debug">Number of Clamor Clients: <span id="numClients"></span></div>
+
+
+	<!-- <script>
+	  var socket = io();
+	</script> -->
+</body>
+</html>
+

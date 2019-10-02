@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>Clamor - Dashboard</title>
+        <!-- Imports -->
+        <script src="/socket.io/socket.io.js"></script>
+	    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	    <link rel="stylesheet" type="text/css" href="./user-dashboard.css" />
+	    <script type="text/javascript"  src="/user-dashboard-controller.js"></script>
+	    <script type="text/javascript"  src="/PostJSON.js"></script>
+	    <!-- End Imports -->
+    </head>
+
+    <body onload="initializeDashboard()">
+
+        <div id="title-bar-user-dashboard" class="container-fluid" style="background-color: rgba(20, 45, 120, 0.8)">
+            <div class="row">
+                <div class="col-4">
+                    <h1 id="clamor-dashboard-header" style="color:azure; font-size: 2rem">Clamor</h1>
+                </div>
+                <div class="col-8">
+                    <p id ="welcome-user" >Welcome, <span id="logged-in-user"> Username</span></p>
+                </div>
+            </div>
+        </div>
+        <br>
+
+        <div id="contacts-parent-container">
+            <div id = "contacts-title-container">Contacts</div>
+            <table class = "contacts-table-class" id="contacts-table"></table>
+        </div>
+
+        <div id="chat-parent-container">
+            <div id = "chat-title-container">Chat</div>
+            <div id = "chat-messages-container"></div>
+        </div>
+
+        <div id="message-parent-container">
+            <input id="enter-message-field" placeholder="Type a message"></input>
+            <button id="send-message-button" onclick="sendMessageRequest()">Send</button> 
+        </div>
+
+        <div id="debug">
+            Debug Block
+        </div>
+        <div id="debug2">
+            Logged In Users
+        </div>
+        
+    </body>
+</html>

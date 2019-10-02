@@ -1,0 +1,152 @@
+/* Start Parent Container CSS */
+body{
+    background-color:rgb(230, 230, 230);
+
+}
+.parent-container {
+    display: flex;
+ }
+ 
+
+#message-parent-container {
+    width: 70vw;
+    margin-left: 28.3vw;
+    margin-right: 3vw ;
+    height: 10vh;
+    background-color:white;
+}
+/* End Parent Container CSS */
+
+/* Start Contacts CSS */
+#contacts-parent-container{
+    display: inline-block;
+    background-color: white;
+    width: 25vw;
+    height: 75vh;
+    overflow: auto;
+    margin-left: 2vw;
+    margin-right:1vw;
+    /* border-radius: 5px; */
+ }
+#contacts-title-container{
+    background-color: lightblue;
+    font-size:5vh;
+    font-weight:700;
+    border-radius: 5px;
+
+}
+
+.contacts-table-class{
+    text-align: left;
+    font-size: 4vh;
+     overflow: auto; 
+     margin-left: 1vw;
+}
+.contacts-table-entry-dot{
+    margin-top:0.5vh ;
+    height: 10px;
+    width: 10px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.contacts-table-entry-dot-online{
+    margin-top:0.5vh ;
+    height: 10px;
+    width: 10px;
+    background-color: greenyellow;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+/* End Contacts CSS */
+
+/* Start Chat Container CSS */
+#chat-parent-container{
+
+    display: inline-block;
+    width: 70vw;
+    height: 75vh;
+    background-color:white;
+    overflow-y: scroll;
+ }
+ #chat-title-container{
+    background-color: blanchedalmond;
+    font-size:5vh;
+    font-weight:700;
+}
+#chat-messages-container{
+    display: flex;
+    flex-direction: column-reverse;
+
+}
+    .chat-message-session-user{
+        display:flex;
+        /* flex-direction: column; */
+        text-align: right;
+        margin-left:auto;
+        margin-right:5vw;
+    }
+    .chat-message-other-user{
+        display:flex;
+        /* flex-direction: column; */
+        text-align:left;
+        margin-right:auto;
+        margin-left:5vw;
+    }
+        .chat-message-user-badge{
+            font-size:10px;
+            display:flex;
+        }
+
+        .chat-message-content-session{
+        background-color: rgb(253, 245, 171);
+        margin-bottom: 0.75em;
+        font-size:15px;
+        margin-left:auto;
+        padding-top:10px;
+        padding-bottom:10px;
+        padding-right:20px;
+        padding-left:20px;
+        }
+
+        .chat-message-content-other{
+            background-color: rgb(208, 231, 250);
+            margin-bottom: 1em;
+            font-size:15px;
+            margin-right:auto;
+            padding-top:10px;
+            padding-bottom:10px;
+            padding-right:20px;
+            padding-left:20px;
+            }
+
+/* End Chat Container CSS */
+
+#enter-message-field{
+    color:black;
+    width:50vw;
+}
+#message-parent-container{
+   background-color: rgb(230, 230, 230)
+}
+
+#welcome-user{
+
+    color:azure;
+    text-align:right;
+}
+
+#logout-button{
+    text-align:right ;
+    display: block ;
+    margin-left: 40rem;
+    font-size:10px;
+}
+
+#user-display{
+    width:100px;
+    height: 100px;
+    overflow:auto;
+}
