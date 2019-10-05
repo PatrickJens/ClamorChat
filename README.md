@@ -1,11 +1,12 @@
 # ClamorChat
 Web based chat application deployed on the Heroku cloud. 
 
-In the  DemoPresentation power point, start at page 6 for some explanation.
+In the  DemoPresentation.pptx, start at page 6 for app explanations and some UML
+
+---------------------------------------------------------------------------------------------------------------
 
 Some classes like Cookie.js are not user. Some classes like PostJSON is only used once. This was a learning process. 
 
-------------------------------------------------------------------------------------------------
 The main entry point is clamor-server.js; clamor-server.js must be running either locally or in cloud for the application to work
 
 Folders named wxyz-VC means that a MVC (model-view-controller) was implemented for that part of the webpage. Because the data model was simple, only the VC of MVC was explcitly implemented. The only exception is register-user-VC which only contains the registration page .html and uses controller JavaScript code from other MVC folders. 
