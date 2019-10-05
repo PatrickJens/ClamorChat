@@ -3,6 +3,8 @@ Web based chat application deployed on the Heroku cloud.
 
 In the  DemoPresentation.pptx, start at page 6 for app explanations and some UML
 
+At some point, I'll push the npm_modules folder
+
 ---------------------------------------------------------------------------------------------------------------
 
 Some classes like Cookie.js are not user. Some classes like PostJSON is only used once. This was a learning process. 
@@ -15,7 +17,7 @@ The user data model is {username, password}
 
 The message data model was {sender_username, receiver_username, message_content}
 
-A large number of dependencies in a node_modules folder made it unfeasible to upload all the module files. Dependencies are listed in the package.json file (for localhost) and package-lock.json (for Heroku). The package files are identical; Heroku required dependencies be listed in a file named package-lock.json
+Dependencies are listed in the package.json file (for localhost) and package-lock.json (for Heroku). The package files are identical; Heroku required dependencies be listed in a file named package-lock.json
 
 Use NPM to download/refresh the dependencies. 
 
