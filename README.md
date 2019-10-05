@@ -1,6 +1,10 @@
 # ClamorChat
 Web based chat application deployed on the Heroku cloud. 
 
+In the  DemoPresentation power point, start at page 6 for some explanation.
+
+Some classes like Cookie.js are not user. Some classes like PostJSON is only used once. This was a learning process. 
+
 ------------------------------------------------------------------------------------------------
 The main entry point is clamor-server.js; clamor-server.js must be running either locally or in cloud for the application to work
 
